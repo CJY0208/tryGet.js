@@ -2,7 +2,7 @@
 
 Get property without breaking Error
 
-不会写测试用例...以下就是随随便便的测试用例
+#用途
 
 假设有一个对象obj，在不知道obj键值情况的条件下，想要获取obj.k1.k2
 
@@ -16,10 +16,11 @@ Get property without breaking Error
 
 如果确实存在这个路径，那就能正确获取到对应的值，路径上任意一层出错，都会返回undefined，并且不会报错
 
-2017-04-18 更新 tryRun, 
+#2017-04-18 新增 tryRun 函数
 
 和tryGet类似，不同之处是用来运行函数的
 
+不会写测试用例，以下就是随随便便的测试用例 >_<
 
 ```javascript
 var obj = {
